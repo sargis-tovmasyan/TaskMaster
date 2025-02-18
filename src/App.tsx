@@ -9,11 +9,11 @@ const { Header, Content, Footer, Sider } = Layout;
 
 const App: React.FC = () => {
   const {
-    token: { colorBgContainer, borderRadiusLG },
+    token: { borderRadiusLG },
   } = theme.useToken();
 
   return (
-    <Layout>
+    <Layout style={{height: '100vh', display: 'flex', flexDirection: 'column'}}>
       <Header>
         <div className="demo-logo" />
         <NavigationBar />
@@ -24,17 +24,14 @@ const App: React.FC = () => {
           <Breadcrumb.Item>List</Breadcrumb.Item>
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
-        <Layout style={{ padding: '24px 0', background: colorBgContainer, borderRadius: borderRadiusLG }}>
-          <Sider className='sidebar-sider'>
+        <Layout style={{ padding: '24px 0', borderRadius: borderRadiusLG }}>
+          <Sider >
             <SideBar />
           </Sider>
           <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
         </Layout>
       </div>
-      {/* <Footer style={{ textAlign: 'center' }}>
-        Sargis Tovmasyan ©{new Date().getFullYear()}
-      </Footer> */}
-      <Footer className='footer-layout'>
+      <Footer style={{ textAlign: 'center', paddingTop: '100px' }}>
         Sargis Tovmasyan ©{new Date().getFullYear()}
       </Footer>
     </Layout>
