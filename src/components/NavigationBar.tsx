@@ -6,6 +6,7 @@ const NavigationBar: React.FC = () => {
 
   const options: MenuProps['items'] = [
     { key: '/', label: 'Home' },
+    { key: '/dashboard', label: 'Dashboard' },
     { key: '/about', label: 'About' },
     { key: '/contacts', label: 'Contact' },
   ];

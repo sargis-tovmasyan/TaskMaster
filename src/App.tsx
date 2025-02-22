@@ -6,6 +6,7 @@ import NavigationBar from './components/NavigationBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import DashboardPage from './pages/DashboardPage';
 
 // import Styles from './styles/App.css'
 import SideBar from './components/SideBar';
@@ -40,6 +41,7 @@ const App: React.FC = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contacts" element={<ContactPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
           </Routes>
           </Content>
         </Layout>
