@@ -1,60 +1,59 @@
 import React from 'react';
 import { Card, Col, Row } from 'antd';
 
-const tasks = [
-    {
-        id: 1,
-        title: "Design the login page",
-        description: "Create a user-friendly login page.",
-        estimation: 3,
-        emoji: "🎨",
-        ariaLabel: "design"
-    },
-    {
-        id: 2,
-        title: "Set up database schema",
-        description: "Define the database schema for user data.",
-        estimation: 5,
-        emoji: "🗄️",
-        ariaLabel: "database"
-    },
-    {
-        id: 3,
-        title: "Research authentication methods",
-        description: "Investigate various authentication methods.",
-        estimation: 2,
-        emoji: "🔍",
-        ariaLabel: "research"
-    },
-    {
-        id: 4,
-        title: "Implement user registration",
-        description: "Develop the user registration functionality.",
-        estimation: 8,
-        emoji: "📝",
-        ariaLabel: "registration"
-    },
-    {
-        id: 5,
-        title: "Create API endpoints",
-        description: "Build the necessary API endpoints for the application.",
-        estimation: 5,
-        emoji: "🔗",
-        ariaLabel: "api"
-    },
-    {
-        id: 7,
-        title: "Install necessary dependencies",
-        description: "Install all required dependencies for the project.",
-        estimation: 1,
-        emoji: "📦",
-        ariaLabel: "dependencies"
-    }
-];
+// const tasks = [
+//     {
+//         id: 1,
+//         title: "Design the login page",
+//         description: "Create a user-friendly login page.",
+//         estimation: 3,
+//         emoji: "🎨",
+//         ariaLabel: "design"
+//     },
+//     {
+//         id: 2,
+//         title: "Set up database schema",
+//         description: "Define the database schema for user data.",
+//         estimation: 5,
+//         emoji: "🗄️",
+//         ariaLabel: "database"
+//     },
+//     {
+//         id: 3,
+//         title: "Research authentication methods",
+//         description: "Investigate various authentication methods.",
+//         estimation: 2,
+//         emoji: "🔍",
+//         ariaLabel: "research"
+//     },
+//     {
+//         id: 4,
+//         title: "Implement user registration",
+//         description: "Develop the user registration functionality.",
+//         estimation: 8,
+//         emoji: "📝",
+//         ariaLabel: "registration"
+//     },
+//     {
+//         id: 5,
+//         title: "Create API endpoints",
+//         description: "Build the necessary API endpoints for the application.",
+//         estimation: 5,
+//         emoji: "🔗",
+//         ariaLabel: "api"
+//     },
+//     {
+//         id: 7,
+//         title: "Install necessary dependencies",
+//         description: "Install all required dependencies for the project.",
+//         estimation: 1,
+//         emoji: "📦",
+//         ariaLabel: "dependencies"
+//     }
+// ];
 
 const DashboardPage: React.FC = () => {
     return (
-        <div style={{ padding: '30px' }}>
             <Row gutter={[16, 16]}>
             <Col span={8}>
                 <Card title="To Do" bordered={false} style={{ boxShadow: '0 4px 8px rgba(0,0,0,0.1)' }}>
@@ -105,7 +104,6 @@ const DashboardPage: React.FC = () => {
                 </Card>
             </Col>
             </Row>
-        </div>
     );
 };
 
